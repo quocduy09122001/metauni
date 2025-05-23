@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-from sqlalchemy import Column, Integer, String, select, DateTime, func
+from sqlalchemy import Column, Integer, String, select, DateTime, func, Numeric, Text
 
 DATABASE_URL = "postgresql+asyncpg://postgres:23101986az@localhost/metauni"
 
@@ -17,3 +17,5 @@ class Product(Base):
     content = Column(String)    # Nội dung
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     category = Column(String)
+    price = Column(Numeric) 
+    author = Column(Text) 

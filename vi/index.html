@@ -416,10 +416,146 @@
         </div>
     </section>
 
-    <section class="data_content">
+    <section class="data_content py-5">
         <div class="container">
-            <div class="row g-3" id="data_content">
-
+            <h2 class="fw-bold mb-3">A broad selection of courses</h2>
+            <p class="mb-4">Choose from 213,000 online video courses with new additions published every month</p>
+            
+            <div class="mb-4">
+                <ul class="nav nav-tabs" id="courseTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="most-popular-tab" data-bs-toggle="tab" data-bs-target="#most-popular" type="button" role="tab" aria-controls="most-popular" aria-selected="true">Most Popular</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab" aria-controls="new" aria-selected="false">New</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="trending-tab" data-bs-toggle="tab" data-bs-target="#trending" type="button" role="tab" aria-controls="trending" aria-selected="false">Trending</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="tab-content" id="courseTabContent">
+                <div class="tab-pane fade show active" id="most-popular" role="tabpanel" aria-labelledby="most-popular-tab">
+                    <div class="row g-4" id="data_content">
+                        <!-- Course Card 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/image/courses/python-bootcamp.jpg" class="card-img-top" alt="Course">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title fw-bold">Complete Python Bootcamp: From Zero to Hero</h5>
+                                    <p class="card-text text-muted small">Jose Portilla</p>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="text-warning me-1">4.6</span>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="text-muted ms-2">(394,274)</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="fw-bold">$14.99</span>
+                                        <span class="text-muted text-decoration-line-through ms-2">$94.99</span>
+                                    </div>
+                                    <span class="badge bg-warning text-dark mt-2">Bestseller</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/image/courses/web-dev-bootcamp.jpg" class="card-img-top" alt="Course">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title fw-bold">The Complete 2023 Web Development Bootcamp</h5>
+                                    <p class="card-text text-muted small">Dr. Angela Yu</p>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="text-warning me-1">4.7</span>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="text-muted ms-2">(228,166)</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="fw-bold">$14.99</span>
+                                        <span class="text-muted text-decoration-line-through ms-2">$94.99</span>
+                                    </div>
+                                    <span class="badge bg-warning text-dark mt-2">Bestseller</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/image/courses/machine-learning.jpg" class="card-img-top" alt="Course">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title fw-bold">Machine Learning A-Z: Hands-On Python & R</h5>
+                                    <p class="card-text text-muted small">Kirill Eremenko, Hadelin de Ponteves</p>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="text-warning me-1">4.5</span>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="text-muted ms-2">(154,741)</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="fw-bold">$14.99</span>
+                                        <span class="text-muted text-decoration-line-through ms-2">$94.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Course Card 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="/image/courses/react-complete-guide.jpg" class="card-img-top" alt="Course">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title fw-bold">React - The Complete Guide 2023</h5>
+                                    <p class="card-text text-muted small">Maximilian Schwarzmüller</p>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="text-warning me-1">4.6</span>
+                                        <div class="text-warning">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="text-muted ms-2">(168,392)</span>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="fw-bold">$14.99</span>
+                                        <span class="text-muted text-decoration-line-through ms-2">$94.99</span>
+                                    </div>
+                                    <span class="badge bg-warning text-dark mt-2">Bestseller</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+                    <!-- New courses content would go here -->
+                    <div class="alert alert-info">New courses will be displayed here</div>
+                </div>
+                
+                <div class="tab-pane fade" id="trending" role="tabpanel" aria-labelledby="trending-tab">
+                    <!-- Trending courses content would go here -->
+                    <div class="alert alert-info">Trending courses will be displayed here</div>
+                </div>
             </div>
         </div>
     </section>
